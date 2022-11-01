@@ -40,9 +40,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:maxImageSize="40dp"
-        app:srcCompat="?android:attr/textSelectHandleRight"
-        app:useCompatPadding="false" />
+        app:maxImageSize="30dp"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:useCompatPadding="false"
+        tools:ignore="RedundantDescriptionCheck" />
 
     <Button
         android:id="@+id/button2"
