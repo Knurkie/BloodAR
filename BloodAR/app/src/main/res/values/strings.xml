@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Blood AR</string>
+    <string name="welcome">Welcome!</string>
+    <string name="syndromes">Syndromes</string>
+    <string name="ar">AR</string>
+    <string name="feedback_button_description">Feedback button</string>
+</resources>
