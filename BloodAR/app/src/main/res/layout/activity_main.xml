@@ -43,15 +43,16 @@
         app:maxImageSize="30dp"
         app:srcCompat="@android:drawable/ic_dialog_email"
         app:useCompatPadding="false"
-        tools:ignore="RedundantDescriptionCheck" />
+        tools:ignore="RedundantDescriptionCheck"
+        android:onClick="sendFeedbackMessage" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="24dp"
         android:backgroundTint="#FF3C3C"
         android:text="@string/ar"
@@ -61,21 +62,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.177"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck"
+        android:onClick="sendARMessage" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="32dp"
         android:backgroundTint="#FF3C3C"
         android:text="@string/syndromes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck"
+        android:onClick="sendSyndromeMessage" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
