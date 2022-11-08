@@ -14,7 +14,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:text="We appreciate your feedback!"
+        android:text="@string/we_appreciate_your_feedback"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,14 +31,15 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="32dp"
+        android:text="@string/send"
         app:backgroundTint="#FF3C3C"
-        android:text="Send"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.122" />
+        app:layout_constraintVertical_bias="0.122"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/feedbackText"
@@ -46,14 +47,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Feedback"
+        android:hint="@string/feedback_input"
+        android:inputType="textCapSentences"
         android:minHeight="48dp"
+        android:textColorHint="#78909C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/feedbackSendButton"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.156" />
+        app:layout_constraintVertical_bias="0.156"
+        android:importantForAutofill="no" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

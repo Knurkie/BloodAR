@@ -5,4 +5,9 @@
     <string name="syndromes">Syndromes</string>
     <string name="ar">AR</string>
     <string name="feedback_button_description">Feedback button</string>
+    <string name="send">Send</string>
+    <string name="we_appreciate_your_feedback">We appreciate your feedback!</string>
+    <string name="feedback_input">Feedback</string>
+    <string name="fibrilating_heart">Fibrilating Heart</string>
+    <string name="syndrome_list">Syndrome list</string>
 </resources>
