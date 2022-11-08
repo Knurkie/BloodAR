@@ -21,15 +21,6 @@ class MainActivity : AppCompatActivity() {
         feedbackButton.setOnClickListener {openFeedbackActivity()}
         }
 
-    /** Called when the user touches the 'AR' button */
-    fun sendARMessage(view: View) {
-        Toast.makeText(this, "Open camera and display AR model", Toast.LENGTH_SHORT).show()
-    }
-    /** Called when the user touches the 'AR' button */
-    fun sendFeedbackMessage(view: View) {
-        Toast.makeText(this, "Open feedback screen1", Toast.LENGTH_SHORT).show()
-    }
-
     private fun openSyndromeListActivity() {
         val intent = Intent(this, SyndromeListActivity::class.java)
         startActivity(intent)

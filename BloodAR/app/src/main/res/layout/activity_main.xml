@@ -18,7 +18,6 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -43,8 +42,7 @@
         app:maxImageSize="30dp"
         app:srcCompat="@android:drawable/ic_dialog_email"
         app:useCompatPadding="false"
-        tools:ignore="RedundantDescriptionCheck"
-        android:onClick="sendFeedbackMessage" />
+        tools:ignore="RedundantDescriptionCheck" />
 
     <Button
         android:id="@+id/arButton"
@@ -62,8 +60,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.177"
-        tools:ignore="TextContrastCheck"
-        android:onClick="sendARMessage" />
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/syndromeButton"
