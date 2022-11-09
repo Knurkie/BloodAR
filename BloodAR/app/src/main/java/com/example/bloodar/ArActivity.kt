@@ -1,21 +1,18 @@
 package com.example.bloodar
 
-import android.Manifest
-import android.content.pm.PackageManager
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
+import com.example.bloodar.CameraPermissionHelper.checkCameraPermission
+import com.example.bloodar.CameraPermissionHelper.requestCameraPermission
 import com.google.ar.core.ArCoreApk
 import com.google.ar.core.Session
 import com.google.ar.core.exceptions.UnavailableUserDeclinedInstallationException
-import kotlinx.android.synthetic.main.activity_main.*
 
 
 class ArActivity : AppCompatActivity() {
-    private val PERMISSION_REQUEST_CODE = 200
-    private var mSession: Session = Session(this)
+//    private val PERMISSION_REQUEST_CODE = 200
+    private lateinit var mSession: Session
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,16 +27,11 @@ class ArActivity : AppCompatActivity() {
         super.onResume()
 
         // Check camera permission.
-        override fun onResume() {
-            super.onResume()
-
             // ARCore requires camera permission to operate.
-            if (!checkCameraPermission()) {
-                requestCameraPermission()
-                return
+        if (!checkCameraPermission(this)) {
+            requestCameraPermission(this)
+            return
             }
-
-        }
 
         // Ensure that Google Play Services for AR and ARCore device profile data are
         // installed and up to date.
@@ -69,7 +61,7 @@ class ArActivity : AppCompatActivity() {
             Toast.makeText(this, "TODO: handle exception $e", Toast.LENGTH_LONG)
                 .show()
             return
-        } catch () {
+        } catch (e: Throwable) {
 
             return  // mSession remains null, since session creation has failed.
         }
@@ -82,7 +74,7 @@ class ArActivity : AppCompatActivity() {
         results: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, results)
-        if (!checkCameraPermission()) {
+        if (!checkCameraPermission(this)) {
             Toast.makeText(
                 this,
                 "Camera permission is needed to run this application",
@@ -95,15 +87,5 @@ class ArActivity : AppCompatActivity() {
             }
             finish()
         }
-    }
-    private fun checkCameraPermission(): Boolean {
-        return ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED
-    }
-
-    private fun requestCameraPermission() {
-        ActivityCompat.requestPermissions(
-            this, arrayOf(Manifest.permission.CAMERA),
-            PERMISSION_REQUEST_CODE
-        )
     }
 }

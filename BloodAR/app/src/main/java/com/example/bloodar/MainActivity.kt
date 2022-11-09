@@ -11,17 +11,17 @@ import com.google.ar.core.ArCoreApk
 
 
 class MainActivity : AppCompatActivity() {
-    val mArButton: Button = findViewById(R.id.arButton)
+    var mArButton: Button? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        mArButton = findViewById(R.id.arButton)
         maybeEnableArButton()
 
         val syndromeButton: Button = findViewById(R.id.syndromeButton)
         syndromeButton.setOnClickListener{openSyndromeListActivity()}
 
-        mArButton.setOnClickListener{openArActivity()}
+        mArButton!!.setOnClickListener{openArActivity()}
 
         val feedbackButton: FloatingActionButton = findViewById(R.id.feedbackButton)
         feedbackButton.setOnClickListener{openFeedbackActivity()}
@@ -36,11 +36,11 @@ class MainActivity : AppCompatActivity() {
             }, 200)
         }
         if (availability.isSupported) {
-            mArButton.visibility = View.VISIBLE
-            mArButton.isEnabled = true
+            mArButton!!.visibility = View.VISIBLE
+            mArButton!!.isEnabled = true
         } else { // The device is unsupported or unknown.
-            mArButton.visibility = View.INVISIBLE
-            mArButton.isEnabled = false
+            mArButton!!.visibility = View.INVISIBLE
+            mArButton!!.isEnabled = false
         }
     }
 
