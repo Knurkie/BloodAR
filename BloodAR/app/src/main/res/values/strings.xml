@@ -8,6 +8,12 @@
     <string name="send">Send</string>
     <string name="we_appreciate_your_feedback">We appreciate your feedback!</string>
     <string name="feedback_input">Feedback</string>
-    <string name="fibrillating_heart">Fibrillating Heart</string>
+    <string name="atrial_fibrillation">Atrial fibrillation</string>
     <string name="syndrome_list">Syndrome list</string>
+    <string name="atherosclerosis">Atherosclerosis</string>
+    <string name="atrial_fibrillation_description">Atrial fibrillation (A-fib) is an irregular and often very rapid heart rhythm (arrhythmia) that can lead to blood clots in the heart. A-fib increases the risk of stroke, heart failure and other heart-related complications.
+        \n\nDuring atrial fibrillation, the heart\'s upper chambers (the atria) beat chaotically and irregularly — out of sync with the lower chambers (the ventricles) of the heart. For many people, A-fib may have no symptoms. However, A-fib may cause a fast, pounding heartbeat (palpitations), shortness of breath or weakness.
+        \n\nEpisodes of atrial fibrillation may come and go, or they may be persistent. Although A-fib itself usually isn\'t life-threatening, it\'s a serious medical condition that requires proper treatment to prevent stroke.
+        \n\nTreatment for atrial fibrillation may include medications, therapy to reset the heart rhythm and catheter procedures to block faulty heart signals.
+        \n\nA person with atrial fibrillation may also have a related heart rhythm problem called atrial flutter. Although atrial flutter is a different arrhythmia, the treatment is quite similar to atrial fibrillation.</string>
 </resources>
