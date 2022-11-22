@@ -32,7 +32,7 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
     )
 
     val models = listOf(
-        Model("blood_circulation.glb"),
+        Model("models/spiderbot.glb"),
         Model(
             fileLocation = "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",
             // Display the Tiger with a size of 3 m long
@@ -82,12 +82,12 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
             fitsSystemWindows = false
         )
 
-        setSupportActionBar(findViewById<Toolbar>(R.id.toolbar)?.apply {
-            doOnApplyWindowInsets { systemBarsInsets ->
-                (layoutParams as ViewGroup.MarginLayoutParams).topMargin = systemBarsInsets.top
-            }
-            title = ""
-        })
+//        setSupportActionBar(findViewById<Toolbar>(R.id.toolbar)?.apply {
+//            doOnApplyWindowInsets { systemBarsInsets ->
+//                (layoutParams as ViewGroup.MarginLayoutParams).topMargin = systemBarsInsets.top
+//            }
+//            title = ""
+//        })
         sceneView = findViewById(R.id.sceneView)
         loadingView = findViewById(R.id.loadingView)
         newModelButton = findViewById<ExtendedFloatingActionButton>(R.id.newModelButton).apply {
@@ -164,7 +164,6 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
         sceneView.selectedNode = modelNode
     }
 }
-
 
 ////import android.R
 //import android.os.Bundle
