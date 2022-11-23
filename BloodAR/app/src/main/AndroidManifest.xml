@@ -57,7 +57,8 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -68,6 +69,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+
         <!--
  "AR Required" app, requires "Google Play Services for AR" (ARCore)
          to be installed, as the app does not include any non-AR features.
@@ -75,6 +78,8 @@
 <!--        <meta-data-->
 <!--            android:name="com.google.ar.core"-->
 <!--            android:value="required" />-->
+
+
     </application>
 
 </manifest>

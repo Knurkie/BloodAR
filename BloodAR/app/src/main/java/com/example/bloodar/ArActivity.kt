@@ -32,37 +32,12 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
     )
 
     val models = listOf(
-        Model("models/spiderbot.glb"),
-        Model(
-            fileLocation = "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb",
-            // Display the Tiger with a size of 3 m long
-            scaleUnits = 2.5f,
-            placementMode = PlacementMode.BEST_AVAILABLE,
-            applyPoseRotation = false
-        ),
-        Model(
-            fileLocation = "https://sceneview.github.io/assets/models/DamagedHelmet.glb",
-            placementMode = PlacementMode.INSTANT,
-            scaleUnits = 0.5f
-        ),
-        Model(
-            fileLocation = "https://storage.googleapis.com/ar-answers-in-search-models/static/GiantPanda/model.glb",
-            placementMode = PlacementMode.PLANE_HORIZONTAL,
-            // Display the Tiger with a size of 1.5 m height
-            scaleUnits = 1.5f
-        ),
-        Model(
-            fileLocation = "https://sceneview.github.io/assets/models/Spoons.glb",
-            placementMode = PlacementMode.PLANE_HORIZONTAL_AND_VERTICAL,
-            // Keep original model size
-            scaleUnits = null
-        ),
-        Model(
-            fileLocation = "https://sceneview.github.io/assets/models/Halloween.glb",
-            placementMode = PlacementMode.PLANE_HORIZONTAL,
-            scaleUnits = 2.5f
-        ),
+        Model("blood_circulation.glb"),
+        Model(fileLocation = "beating_heart_intersection.glb"),
+        Model(fileLocation = "cardiac_anatomy_external_view.glb"),
+        Model(fileLocation = "heart.glb")
     )
+
     var modelIndex = 0
     var modelNode: ArModelNode? = null
 
@@ -88,6 +63,7 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
 //            }
 //            title = ""
 //        })
+
         sceneView = findViewById(R.id.sceneView)
         loadingView = findViewById(R.id.loadingView)
         newModelButton = findViewById<ExtendedFloatingActionButton>(R.id.newModelButton).apply {
@@ -163,7 +139,12 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
         // Select the model node by default (the model node is also selected on tap)
         sceneView.selectedNode = modelNode
     }
+
+
+
 }
+
+
 
 ////import android.R
 //import android.os.Bundle
