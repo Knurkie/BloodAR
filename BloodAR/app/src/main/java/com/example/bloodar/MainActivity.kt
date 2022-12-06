@@ -1,6 +1,7 @@
 package com.example.bloodar
 
 import android.content.Intent
+import android.content.Intent.*
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
@@ -55,7 +56,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openArActivity() {
-        val intent = Intent(this, ArActivity::class.java)
+        val intent = Intent(this, ArActivity::class.java).apply{addFlags(FLAG_ACTIVITY_REORDER_TO_FRONT)}
         startActivity(intent)
     }
 }

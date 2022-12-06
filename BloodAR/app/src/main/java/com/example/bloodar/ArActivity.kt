@@ -81,6 +81,7 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
         }
 
         newModelNode()
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
