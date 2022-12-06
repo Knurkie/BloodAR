@@ -142,7 +142,6 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
     }
 
 
-
 //    Temporary way to fix the app crashing when returning to the Main Activity from the AR Activity.
     @Deprecated("Deprecated in Java")
     override fun onBackPressed(){
@@ -154,7 +153,5 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
-
-
 
 }
