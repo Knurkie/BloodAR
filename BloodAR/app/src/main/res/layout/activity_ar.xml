@@ -22,8 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:backgroundTint="#3F000000"
-        android:gravity="center_vertical|left"
-        android:text="new_object"
+        android:gravity="center_vertical|start"
+        android:text="@string/new_AR_object"
         android:textColor="@android:color/white"
         app:icon="@android:drawable/ic_input_add"
         app:iconGravity="textStart"
@@ -38,8 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#3F000000"
-        android:gravity="center_vertical|left"
-        android:text="place_object"
+        android:gravity="center_vertical|start"
+        android:text="@string/place_AR_object"
         android:textColor="@android:color/white"
         app:icon="@android:drawable/arrow_down_float"
         app:iconGravity="textStart"
@@ -80,24 +80,3 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-<!--    <ar.ArSceneView-->
-<!--        android:id="@+id/sceneView"-->
-<!--        android:layout_width="79dp"-->
-<!--        android:layout_height="64dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.394" />-->
-
-<!--    <androidx.fragment.app.FragmentContainerView-->
-<!--        android:id="@+id/arFragment"-->
-<!--        android:name="com.google.ar.sceneform.ux.ArFragment"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

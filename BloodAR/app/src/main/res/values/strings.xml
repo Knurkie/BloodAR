@@ -16,4 +16,10 @@
         \n\nEpisodes of atrial fibrillation may come and go, or they may be persistent. Although A-fib itself usually isn\'t life-threatening, it\'s a serious medical condition that requires proper treatment to prevent stroke.
         \n\nTreatment for atrial fibrillation may include medications, therapy to reset the heart rhythm and catheter procedures to block faulty heart signals.
         \n\nA person with atrial fibrillation may also have a related heart rhythm problem called atrial flutter. Although atrial flutter is a different arrhythmia, the treatment is quite similar to atrial fibrillation.</string>
+    <string name="atrial_fibrilation_description">Image showing normal heart rhythm and fibrillation rhythm.</string>
+    <string name="new_AR_object">New Object</string>
+    <string name="place_AR_object">Place Object</string>
+    <string name="atherosclerosis_description">Atherosclerosis is a potentially serious condition where arteries become clogged with fatty substances called plaques, or atheroma.
+        \n\nThese plaques cause the arteries to harden and narrow, restricting the blood flow and oxygen supply to vital organs, and increasing the risk of blood clots that could potentially block the flow of blood to the heart or brain.
+        \n\nAtherosclerosis does not tend to have any symptoms at first and many people may be unaware they have it, but it can eventually cause life-threatening problems, such as heart attacks and strokes, if it gets worse.</string>
 </resources>

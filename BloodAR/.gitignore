@@ -13,3 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+/app/src/main/assets/heart.glb
+/app/src/main/assets/cardiac_anatomy_external_view.glb
+/app/src/main/assets/blood_circulation.glb
+/app/src/main/assets/beating_heart_intersection.glb
