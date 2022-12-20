@@ -10,7 +10,6 @@
     <string name="feedback_input">Feedback</string>
     <string name="send">Send</string>
     <string name="syndromes">Syndromes</string>
-    <string name="syndrome_list">Syndrome list</string>
     <string name="atrial_fibrillation">Atrial fibrillation</string>
     <string name="atrial_fibrillation_image">Image showing normal heart rhythm and fibrillation rhythm.</string>
     <string name="atrial_fibrillation_description">Atrial fibrillation (A-fib) is an irregular and often very rapid heart rhythm (arrhythmia) that can lead to blood clots in the heart. A-fib increases the risk of stroke, heart failure and other heart-related complications.
@@ -23,4 +22,17 @@
     <string name="atherosclerosis_description">Atherosclerosis is a potentially serious condition where arteries become clogged with fatty substances called plaques, or atheroma.
         \n\nThese plaques cause the arteries to harden and narrow, restricting the blood flow and oxygen supply to vital organs, and increasing the risk of blood clots that could potentially block the flow of blood to the heart or brain.
         \n\nAtherosclerosis does not tend to have any symptoms at first and many people may be unaware they have it, but it can eventually cause life-threatening problems, such as heart attacks and strokes, if it gets worse.</string>
+    <string name="aneurysm">Aneurysm</string>
+    <string name="aneurysm_description">An aneurysm is an abnormal bulge or ballooning in the wall of a blood vessel. An aneurysm can burst (rupture), causing internal bleeding and often leading to death. Aneurysms usually don\'t cause symptoms, so you might not know you have an aneurysm even if it\'s large.</string>
+    <string name="stroke">Stroke</string>
+    <string name="stroke_description">A stroke occurs when a blood vessel in the brain ruptures and bleeds, or when there’s a blockage in the blood supply to the brain. The rupture or blockage prevents blood and oxygen from reaching the brain’s tissues.
+        \n\nWithout oxygen, brain cells and tissue become damaged and begin to die within minutes.
+        \n\nThere are three primary types of strokes:
+        \n\nTransient ischemic attack (TIA) involves a blood clot that typically reverses on its own.
+        \n\nIschemic stroke involves a blockage caused by either a clot or plaque in the artery. The symptoms and complications of ischemic stroke can last longer than those of a TIA, or may become permanent.
+        \n\nHemorrhagic stroke is caused by either a burst or leaking blood vessel that seeps into the brain.</string>
+    <string name="heart_attack">Heart Attack</string>
+    <string name="heart_attack_description">A heart attack occurs when the flow of blood to the heart is severely reduced or blocked. The blockage is usually due to a buildup of fat, cholesterol and other substances in the heart (coronary) arteries. The fatty, cholesterol-containing deposits are called plaques. The process of plaque buildup is called atherosclerosis.
+        \n\nSometimes, a plaque can rupture and form a clot that blocks blood flow. A lack of blood flow can damage or destroy part of the heart muscle.
+        \n\nA heart attack is also called a myocardial infarction.</string>
 </resources>
