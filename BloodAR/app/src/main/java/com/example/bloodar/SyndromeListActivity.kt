@@ -13,9 +13,6 @@ class SyndromeListActivity : AppCompatActivity() {
         val atrialFibrillationButton: Button = findViewById(R.id.atrialFibrillation)
         atrialFibrillationButton.setOnClickListener{openAtrialFibrillationActivity()}
 
-        val atrialFibrillationTESTButton: Button = findViewById(R.id.atrialFibrillationTEST)
-        atrialFibrillationTESTButton.setOnClickListener{openAtrialFibrillationTESTActivity()}
-
         val atherosclerosisButton: Button = findViewById(R.id.atherosclerosis)
         atherosclerosisButton.setOnClickListener{openAtherosclerosisActivity()}
 
@@ -32,11 +29,6 @@ class SyndromeListActivity : AppCompatActivity() {
 
     private fun openAtrialFibrillationActivity() {
         val intent = Intent(this, AtrialFibrillationActivity::class.java)
-        startActivity(intent)
-    }
-
-    private fun openAtrialFibrillationTESTActivity() {
-        val intent = Intent(this, AtrialFibrillationTESTActivity::class.java)
         startActivity(intent)
     }
 

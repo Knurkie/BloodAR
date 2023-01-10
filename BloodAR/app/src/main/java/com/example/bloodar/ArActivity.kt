@@ -6,7 +6,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
@@ -32,10 +31,9 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
         val applyPoseRotation: Boolean = true,
     )
 
-    val models = listOf(
+    private val models = listOf(
         Model("blood_circulation.glb"),
         Model(fileLocation = "beating_heart_intersection.glb"),
-        Model(fileLocation = "cardiac_anatomy_external_view.glb", scaleUnits = 0.3f),
         Model(fileLocation = "heart.glb")
     )
 
@@ -55,15 +53,8 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
             findViewById(R.id.rootView),
             fullScreen = true,
             hideSystemBars = false,
-            fitsSystemWindows = false
+            fitsSystemWindows = true
         )
-
-//        setSupportActionBar(findViewById<Toolbar>(R.id.toolbar)?.apply {
-//            doOnApplyWindowInsets { systemBarsInsets ->
-//                (layoutParams as ViewGroup.MarginLayoutParams).topMargin = systemBarsInsets.top
-//            }
-//            title = ""
-//        })
 
         sceneView = findViewById(R.id.sceneView)
         loadingView = findViewById(R.id.loadingView)
@@ -81,7 +72,6 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
         }
 
         newModelNode()
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -142,11 +132,8 @@ class ArActivity : AppCompatActivity(R.layout.activity_ar) {
         sceneView.selectedNode = modelNode
     }
 
-
-//    Temporary way to fix the app crashing when returning to the Main Activity from the AR Activity.
     @Deprecated("Deprecated in Java")
     override fun onBackPressed(){
-//        Toast.makeText(applicationContext, "Back button pressed!", Toast.LENGTH_SHORT).show() // Uncomment for debugging purposes.
         openMainActivity()
     }
 
