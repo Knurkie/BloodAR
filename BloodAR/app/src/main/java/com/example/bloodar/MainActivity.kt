@@ -7,7 +7,6 @@ import android.os.Handler
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.ar.core.ArCoreApk
 import java.util.*
 
@@ -25,8 +24,6 @@ class MainActivity : AppCompatActivity() {
 
         mArButton!!.setOnClickListener{openArActivity()}
 
-        val feedbackButton: FloatingActionButton = findViewById(R.id.feedbackButton)
-        feedbackButton.setOnClickListener{openFeedbackActivity()}
     }
 
     private fun maybeEnableArButton() {
@@ -48,11 +45,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun openSyndromeListActivity() {
         val intent = Intent(this, SyndromeListActivity::class.java)
-        startActivity(intent)
-    }
-
-    private fun openFeedbackActivity() {
-        val intent = Intent(this, FeedbackActivity::class.java)
         startActivity(intent)
     }
 
