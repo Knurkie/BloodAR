@@ -1,4 +1,4 @@
-package com.example.bloodar
+package com.PIT.bloodar
 
 import android.content.Intent
 import android.content.Intent.*
@@ -7,6 +7,7 @@ import android.os.Handler
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.PIT.bloodar.R
 import com.google.ar.core.ArCoreApk
 import java.util.*
 

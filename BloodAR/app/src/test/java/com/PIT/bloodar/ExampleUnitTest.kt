@@ -1,4 +1,4 @@
-package com.example.bloodar
+package com.PIT.bloodar
 
 import org.junit.Test
 
