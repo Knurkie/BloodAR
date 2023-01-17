@@ -1,13 +1,15 @@
-package com.example.bloodar
+package com.PIT.bloodar
 
 import android.content.Intent
+import android.content.Intent.*
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.PIT.bloodar.R
 import com.google.ar.core.ArCoreApk
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -23,8 +25,6 @@ class MainActivity : AppCompatActivity() {
 
         mArButton!!.setOnClickListener{openArActivity()}
 
-        val feedbackButton: FloatingActionButton = findViewById(R.id.feedbackButton)
-        feedbackButton.setOnClickListener{openFeedbackActivity()}
     }
 
     private fun maybeEnableArButton() {
@@ -49,13 +49,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun openFeedbackActivity() {
-        val intent = Intent(this, FeedbackActivity::class.java)
-        startActivity(intent)
-    }
-
     private fun openArActivity() {
-        val intent = Intent(this, ArActivity::class.java)
+        val intent = Intent(this, ArActivity::class.java).apply{addFlags(FLAG_ACTIVITY_REORDER_TO_FRONT)}
         startActivity(intent)
     }
 }
